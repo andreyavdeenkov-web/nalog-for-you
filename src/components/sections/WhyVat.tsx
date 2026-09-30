@@ -25,12 +25,12 @@ export function WhyVat() {
             >
               <span
                 aria-hidden
-                className="pt-1 font-serif text-lg text-brass-600 tabular-nums"
+                className="pt-0.5 font-display text-lg font-extrabold text-blue-500 tabular-nums"
               >
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div>
-                <h3 className="font-serif text-h3 font-medium">{item.title}</h3>
+                <h3 className="text-h3 font-bold">{item.title}</h3>
                 <p className="mt-3 max-w-[34rem] text-muted">{item.text}</p>
               </div>
             </li>

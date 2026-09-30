@@ -21,10 +21,10 @@ export function SectionHeading({
   return (
     <div className={`flex max-w-3xl flex-col gap-5 ${alignment} ${className}`}>
       <p className="eyebrow flex items-center gap-3">
-        <span aria-hidden className="h-px w-6 bg-brass-500" />
+        <span aria-hidden className="h-2.5 w-2.5 rounded-[3px] bg-sun" />
         {eyebrow}
       </p>
-      <h2 id={id} className="font-serif text-h2 font-medium">
+      <h2 id={id} className="text-h2 font-bold">
         {title}
       </h2>
       {lead && <p className="max-w-[40rem] text-lead text-muted">{lead}</p>}

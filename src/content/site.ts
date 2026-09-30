@@ -14,8 +14,8 @@ export const siteConfig = {
   contacts: {
     // Подтверждено: e-mail указан в контактах исходного сайта.
     email: "avdeenkova.i@yandex.ru",
-    // TODO: телефон есть на исходном сайте, но не был получен при анализе.
-    phone: null as string | null,
+    // Подтверждено: шапка исходного сайта («Нажмите, чтобы позвонить»).
+    phone: { display: "+7 (910) 050-47-09", href: "tel:+79100504709" },
   },
 } as const;
 

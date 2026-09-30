@@ -22,7 +22,7 @@ export function Audience() {
   return (
     <section
       aria-labelledby="audience-title"
-      className="border-y border-line bg-surface py-24 sm:py-28 lg:py-36"
+      className="bg-mist py-24 sm:py-28 lg:py-36"
     >
       <div className="container-page grid gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
         <div className="pb-8 md:col-span-2 lg:col-span-1 lg:pr-6 lg:pb-0">
@@ -39,12 +39,12 @@ export function Audience() {
           return (
             <article
               key={segment.title}
-              className="group flex flex-col rounded-card border border-line bg-paper/60 p-7 transition-colors duration-300 hover:border-line-strong hover:bg-paper sm:p-8 md:last:col-span-2 lg:last:col-span-1"
+              className="group flex flex-col rounded-card border border-line bg-surface p-7 transition-[border-color,box-shadow] duration-300 hover:border-line-strong hover:shadow-soft sm:p-8 md:last:col-span-2 lg:last:col-span-1"
             >
-              <span className="grid size-12 place-items-center rounded-xl bg-surface text-ink-800 ring-1 ring-line transition-colors group-hover:text-brass-600">
+              <span className="grid size-12 place-items-center rounded-full bg-navy-900 text-cream transition-colors group-hover:bg-blue-600">
                 <Icon width={24} height={24} />
               </span>
-              <h3 className="mt-8 font-serif text-h3 font-medium">{segment.title}</h3>
+              <h3 className="mt-8 text-h3 font-bold">{segment.title}</h3>
               <p className="mt-3 text-muted">{segment.text}</p>
             </article>
           );

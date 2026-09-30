@@ -8,6 +8,8 @@ export type Course = {
   slug: string;
   title: string;
   shortTitle: string;
+  /** Подзаголовок-слоган с исходного сайта. */
+  tagline: string;
   summary: string;
   /** Темы, подтверждённые исходным сайтом. Полная программа — в program. */
   keyTopics: string[];
@@ -20,6 +22,7 @@ export const vatCourse: Course = {
   slug: "nds",
   title: "Онлайн-курс по НДС",
   shortTitle: "НДС",
+  tagline: "Программа для быстрого понимания НДС",
   summary:
     "Базовые основы налога на добавленную стоимость и все изменения налогового законодательства по НДС — в одной структурированной программе.",
   keyTopics: [

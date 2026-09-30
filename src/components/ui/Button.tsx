@@ -1,22 +1,26 @@
 import type { ComponentPropsWithoutRef, ReactNode } from "react";
 
-type Variant = "primary" | "secondary" | "ghost";
+/**
+ * primary — синяя кнопка на светлом фоне;
+ * cream — кремовая кнопка на тёмно-синем фоне;
+ * outline / outlineLight — второстепенные действия на светлом / тёмном фоне.
+ */
+type Variant = "primary" | "cream" | "outline" | "outlineLight";
 type Size = "md" | "lg";
 
 const base =
-  "inline-flex items-center justify-center gap-2.5 rounded-full font-medium whitespace-nowrap transition-[background-color,color,border-color,box-shadow,transform] duration-200 ease-out active:translate-y-px";
+  "inline-flex items-center justify-center gap-2.5 rounded-full font-display font-semibold whitespace-nowrap transition-[background-color,color,border-color,transform] duration-200 ease-out active:translate-y-px";
 
 const variants: Record<Variant, string> = {
-  primary:
-    "bg-ink-900 text-white hover:bg-ink-800 shadow-[0_1px_0_rgb(255_255_255/0.08)_inset,0_8px_20px_-10px_rgb(14_27_51/0.55)]",
-  secondary:
-    "bg-surface text-ink-900 border border-line-strong hover:border-ink-900/40 hover:bg-white",
-  ghost: "text-ink-900 hover:bg-ink-900/5",
+  primary: "bg-navy-900 text-white hover:bg-navy-800",
+  cream: "bg-cream text-navy-900 hover:bg-cream-50",
+  outline: "border border-line-strong bg-surface text-navy-900 hover:border-navy-900/40",
+  outlineLight: "border border-white/25 text-white hover:border-white/60 hover:bg-white/5",
 };
 
 const sizes: Record<Size, string> = {
-  md: "h-11 px-5 text-[0.9375rem]",
-  lg: "h-13 px-7 text-base",
+  md: "h-11 px-5 text-[0.875rem]",
+  lg: "h-14 px-7 text-[0.9375rem]",
 };
 
 type ButtonLinkProps = ComponentPropsWithoutRef<"a"> & {

@@ -38,6 +38,13 @@ export const keyFacts: KeyFact[] = [
   },
 ];
 
+/** «Что будем изучать?» — три источника, дословно с исходного сайта. */
+export const studySources: string[] = [
+  "Главу 21 Налогового кодекса РФ",
+  "Решения судебных органов",
+  "Письма Минфина РФ, ФНС",
+];
+
 export type Difficulty = {
   title: string;
   text: string;

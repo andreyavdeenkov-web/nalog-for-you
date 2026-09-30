@@ -1,8 +1,8 @@
 import { siteConfig } from "@/content/site";
 
 /**
- * Словесный знак школы. Монограмма «Н» — временная, до появления
- * утверждённого логотипа (TODO: заменить, если у бренда есть свой знак).
+ * Знак школы: синий круг, как на исходном сайте, с монограммой.
+ * TODO: заменить на векторный оригинал логотипа, если он есть.
  */
 export function Logo({ className = "" }: { className?: string }) {
   return (
@@ -13,15 +13,15 @@ export function Logo({ className = "" }: { className?: string }) {
     >
       <span
         aria-hidden
-        className="grid size-9 place-items-center rounded-[0.7rem] bg-ink-900 font-serif text-lg font-medium text-paper transition-colors group-hover:bg-ink-800"
+        className="grid size-10 place-items-center rounded-full bg-blue-500 font-display text-lg font-extrabold text-cream ring-4 ring-white/10 transition-colors group-hover:bg-blue-600"
       >
         Н
       </span>
       <span className="flex flex-col leading-none">
-        <span className="font-serif text-[1.1875rem] font-medium tracking-[-0.01em] text-ink-900">
-          {siteConfig.name}
+        <span className="font-display text-[1.0625rem] font-bold tracking-[0.01em] text-cream">
+          «{siteConfig.name}»
         </span>
-        <span className="mt-1 text-[0.6875rem] font-medium tracking-[0.14em] text-subtle uppercase">
+        <span className="mt-1.5 font-display text-[0.625rem] font-semibold tracking-[0.2em] text-white/55 uppercase">
           Онлайн-школа
         </span>
       </span>

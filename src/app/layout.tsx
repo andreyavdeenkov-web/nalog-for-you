@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Literata, Onest } from "next/font/google";
+import { Montserrat, Onest } from "next/font/google";
 import { siteConfig } from "@/content/site";
 import "./globals.css";
 
@@ -9,10 +9,9 @@ const onest = Onest({
   display: "swap",
 });
 
-const literata = Literata({
-  variable: "--font-literata",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin", "cyrillic"],
-  axes: ["opsz"],
   display: "swap",
 });
 
@@ -52,12 +51,12 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#f6f4ef",
+  themeColor: "#052565",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="ru" className={`${onest.variable} ${literata.variable}`}>
+    <html lang="ru" className={`${onest.variable} ${montserrat.variable}`}>
       <body className="min-h-dvh">{children}</body>
     </html>
   );

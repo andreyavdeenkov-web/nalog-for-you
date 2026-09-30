@@ -2,6 +2,7 @@ import { Header } from "@/components/layout/Header";
 import { Audience } from "@/components/sections/Audience";
 import { Hero } from "@/components/sections/Hero";
 import { KeyFacts } from "@/components/sections/KeyFacts";
+import { StudySources } from "@/components/sections/StudySources";
 import { WhyVat } from "@/components/sections/WhyVat";
 import { courses } from "@/content/courses";
 import { buildHomeJsonLd } from "@/lib/schema";
@@ -19,6 +20,7 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
+        <StudySources />
         <KeyFacts />
         <WhyVat />
         <Audience />
